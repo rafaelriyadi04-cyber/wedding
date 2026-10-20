@@ -1,0 +1,356 @@
+:root {
+    --bg-color: #f4f0ea;
+    --card-bg: #fffdfa;
+    --primary-gold: #c5a059;
+    --dark-gold: #9a7b38;
+    --text-dark: #2c2c2c;
+    --text-muted: #666666;
+    --border-color: #e5d9c5;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px 10px;
+}
+
+/* Container Utama */
+.invitation-card {
+    background-color: var(--card-bg);
+    max-width: 650px;
+    width: 100%;
+    padding: 45px 35px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    border: 2px solid var(--border-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.invitation-card::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    border: 1px solid var(--primary-gold);
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+/* Header */
+.header-title {
+    font-family: 'Cinzel', serif;
+    font-size: 18px;
+    letter-spacing: 4px;
+    color: var(--dark-gold);
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    position: relative;
+    display: inline-block;
+}
+
+.header-title::after {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--primary-gold), transparent);
+    margin: 8px auto 0;
+}
+
+.sub-header {
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Mempelai & Profil Foto */
+.groom-bride-section { margin: 25px 0; }
+.couple-box { margin: 20px 0; }
+
+.avatar-wrapper {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 15px auto;
+    border-radius: 50%;
+    padding: 5px;
+    border: 2px solid var(--primary-gold);
+    background-color: var(--card-bg);
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.fullname {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--dark-gold);
+    margin-bottom: 2px;
+}
+
+.nickname {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+}
+
+.parents {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.ampersand {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-style: italic;
+    color: var(--primary-gold);
+    margin: 12px 0;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--primary-gold), transparent);
+    margin: 30px auto;
+    width: 80%;
+}
+
+/* Countdown Timer */
+.countdown-title {
+    font-family: 'Cinzel', serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: var(--dark-gold);
+    margin-bottom: 15px;
+}
+
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.time-box {
+    background: #fcfaf7;
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    border-radius: 8px;
+    min-width: 65px;
+}
+
+.time-box span {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--dark-gold);
+}
+
+.time-box p {
+    font-size: 10px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+}
+
+/* Event Grid */
+.event-section-title, .section-title {
+    font-family: 'Cinzel', serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: var(--dark-gold);
+    margin-bottom: 20px;
+}
+
+.events-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.event-card {
+    background-color: #fcfaf7;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 20px 15px;
+}
+
+.event-type {
+    font-family: 'Cinzel', serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--dark-gold);
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 6px;
+}
+
+.event-detail {
+    font-size: 13px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.location-address {
+    font-size: 12px;
+    color: #777;
+}
+
+/* Galeri Foto */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    aspect-ratio: 1 / 1;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+/* Buttons */
+.btn-primary {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+    background-color: var(--primary-gold);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover { background-color: var(--dark-gold); }
+
+.btn-secondary {
+    background: transparent;
+    border: 1px solid var(--primary-gold);
+    color: var(--dark-gold);
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 11px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-gold);
+    color: #fff;
+}
+
+/* RSVP Form */
+.rsvp-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.rsvp-form input, .rsvp-form select {
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 13px;
+    background: #fcfaf7;
+}
+
+/* Amplop Digital */
+.gift-text {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.bank-card {
+    background: #fcfaf7;
+    border: 1px dashed var(--primary-gold);
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.bank-name { font-weight: 700; color: var(--dark-gold); }
+.account-number { font-size: 18px; font-weight: 700; margin: 5px 0; }
+.account-holder { font-size: 12px; color: var(--text-muted); margin-bottom: 10px; }
+
+/* Music Floating Button */
+.music-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    background-color: var(--primary-gold);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.spin {
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive */
+@media (max-width: 580px) {
+    .events-container { grid-template-columns: 1fr; }
+    .invitation-card { padding: 30px 20px; }
+    .fullname { font-size: 20px; }
+}@charset "utf-8";
+/* CSS Document */
+

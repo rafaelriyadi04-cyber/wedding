@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan Digital - Ahmad & Nadia</title>
+    
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Audio Player (Lagu Latar) -->
+    <audio id="bg-music" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+    
+    <button id="music-control" class="music-btn">
+        <i class="fas fa-music"></i>
+    </button>
+
+    <!-- Kartu Undangan Digital -->
+    <div class="invitation-card">
+        
+        <!-- Judul Utama -->
+        <div class="header-title">Undangan Pernikahan</div>
+        <div class="sub-header">Mempelai Pria & Wanita</div>
+
+        <!-- Informasi Mempelai Beserta Foto -->
+        <div class="groom-bride-section">
+            
+            <!-- Mempelai Pria -->
+            <div class="couple-box">
+                <div class="avatar-wrapper">
+                    <!-- Ganti src dengan link/path foto pria -->
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400" alt="Foto Mempelai Pria" class="profile-img">
+                </div>
+                <div class="fullname">Ahmad Fauzi Rahman, S.Ars.</div>
+                <div class="nickname">(Ahmad Fauzi)</div>
+                <div class="parents">Putra dari <strong>Bapak H. Suherman</strong> & <strong>Ibu Hj. Ratna Sari</strong></div>
+            </div>
+
+            <div class="ampersand">&</div>
+
+            <!-- Mempelai Wanita -->
+            <div class="couple-box">
+                <div class="avatar-wrapper">
+                    <!-- Ganti src dengan link/path foto wanita -->
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400" alt="Foto Mempelai Wanita" class="profile-img">
+                </div>
+                <div class="fullname">Nadia Amalia Siregar, S.Psi.</div>
+                <div class="nickname">(Nadia Amalia)</div>
+                <div class="parents">Putri dari <strong>Bapak Dr. Gunawan Siregar</strong> & <strong>Ibu Hj. Aminah Nasution</strong></div>
+            </div>
+
+        </div>
+
+        <hr class="divider">
+
+        <!-- Countdown Timer -->
+        <div class="countdown-title">Menuju Hari Bahagia</div>
+        <div class="countdown-container" id="countdown">
+            <div class="time-box"><span id="days">00</span><p>Hari</p></div>
+            <div class="time-box"><span id="hours">00</span><p>Jam</p></div>
+            <div class="time-box"><span id="minutes">00</span><p>Menit</p></div>
+            <div class="time-box"><span id="seconds">00</span><p>Detik</p></div>
+        </div>
+
+        <hr class="divider">
+
+        <!-- Rangkaian Acara -->
+        <div class="event-section-title">💍 Akad Nikah & Resepsi 🥂</div>
+        <div class="events-container">
+            <div class="event-card">
+                <div class="event-type">Akad Nikah</div>
+                <div class="event-detail">
+                    <strong>Hari / Tanggal:</strong><br>Sabtu, 24 Mei 2025<br><br>
+                    <strong>Waktu:</strong><br>Pukul 08.00 - 10.00 WIB<br><br>
+                    <strong>Lokasi:</strong><br>Masjid Agung Jawa Tengah<br>
+                    <span class="location-address">Jl. Gajahraya, Semarang</span>
+                </div>
+                <a href="https://maps.google.com" target="_blank" class="btn-primary"><i class="fas fa-map-marker-alt"></i> Google Maps</a>
+            </div>
+
+            <div class="event-card">
+                <div class="event-type">Resepsi</div>
+                <div class="event-detail">
+                    <strong>Hari / Tanggal:</strong><br>Sabtu, 24 Mei 2025<br><br>
+                    <strong>Waktu:</strong><br>Pukul 11.00 - 14.00 WIB<br><br>
+                    <strong>Lokasi:</strong><br>Patra Jasa Hotel Ballroom<br>
+                    <span class="location-address">Jl. Sisingamangaraja No.12, Semarang</span>
+                </div>
+                <a href="https://maps.google.com" target="_blank" class="btn-primary"><i class="fas fa-map-marker-alt"></i> Google Maps</a>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <!-- Galeri Foto Momen / Prewedding -->
+        <div class="section-title">📷 Galeri Foto</div>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=500" alt="Galeri Foto 1">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=500" alt="Galeri Foto 2">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=500" alt="Galeri Foto 3">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?w=500" alt="Galeri Foto 4">
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <!-- Formulir RSVP via WhatsApp -->
+        <div class="section-title">Konfirmasi Kehadiran (RSVP)</div>
+        <form id="rsvp-form" class="rsvp-form">
+            <input type="text" id="rsvp-name" placeholder="Nama Lengkap" required>
+            <select id="rsvp-status" required>
+                <option value="" disabled selected>Apakah Anda akan hadir?</option>
+                <option value="Hadir">Ya, Saya Akan Hadir</option>
+                <option value="Tidak Hadir">Maaf, Saya Tidak Bisa Hadir</option>
+            </select>
+            <input type="number" id="rsvp-guests" placeholder="Jumlah Tamu (Orang)" min="1" max="5">
+            <button type="submit" class="btn-primary"><i class="fab fa-whatsapp"></i> Kirim Konfirmasi</button>
+        </form>
+
+        <hr class="divider">
+
+        <!-- Amplop Digital -->
+        <div class="section-title">Amplop Digital</div>
+        <p class="gift-text">Doa restu Anda merupakan karunia yang sangat berarti bagi kami. Namun jika Anda ingin memberikan tanda kasih, Anda dapat menyalurkannya melalui:</p>
+        
+        <div class="bank-card">
+            <div class="bank-name">BANK BCA</div>
+            <div class="account-number" id="rekening-bca">1234567890</div>
+            <div class="account-holder">a.n. Ahmad Fauzi Rahman</div>
+            <button class="btn-secondary" onclick="copyAccount('rekening-bca')"><i class="fas fa-copy"></i> Salin No. Rekening</button>
+        </div>
+
+    </div>
+
+    <!-- Script JavaScript Internal -->
+    <script>
+        // 1. Musik Control
+        const music = document.getElementById('bg-music');
+        const musicBtn = document.getElementById('music-control');
+        let isPlaying = false;
+
+        musicBtn.addEventListener('click', () => {
+            if (isPlaying) {
+                music.pause();
+                musicBtn.classList.remove('spin');
+            } else {
+                music.play();
+                musicBtn.classList.add('spin');
+            }
+            isPlaying = !isPlaying;
+        });
+
+        document.body.addEventListener('click', () => {
+            if (!isPlaying) {
+                music.play().then(() => {
+                    isPlaying = true;
+                    musicBtn.classList.add('spin');
+                }).catch(() => {});
+            }
+        }, { once: true });
+
+        // 2. Countdown Timer
+        const targetDate = new Date("May 24, 2025 08:00:00").getTime();
+
+        setInterval(() => {
+            const now = new Date().getTime();
+            const difference = targetDate - now;
+
+            if (difference > 0) {
+                const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+                document.getElementById('days').innerText = days < 10 ? '0' + days : days;
+                document.getElementById('hours').innerText = hours < 10 ? '0' + hours : hours;
+                document.getElementById('minutes').innerText = minutes < 10 ? '0' + minutes : minutes;
+                document.getElementById('seconds').innerText = seconds < 10 ? '0' + seconds : seconds;
+            }
+        }, 1000);
+
+        // 3. Form RSVP WhatsApp
+        document.getElementById('rsvp-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('rsvp-name').value;
+            const status = document.getElementById('rsvp-status').value;
+            const guests = document.getElementById('rsvp-guests').value || '1';
+            const phoneNumber = "6281234567890"; 
+            
+            const message = `Halo, saya *${name}*.%0A%0AKonfirmasi Kehadiran: *${status}*%0AJumlah Tamu: *${guests} Orang*%0A%0ATerima kasih.`;
+            window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+        });
+
+        // 4. Salin No Rekening
+        function copyAccount(elementId) {
+            const text = document.getElementById(elementId).innerText;
+            navigator.clipboard.writeText(text).then(() => {
+                alert("Nomor rekening berhasil disalin: " + text);
+            });
+        }
+    </script>
+</body>
+</html>
